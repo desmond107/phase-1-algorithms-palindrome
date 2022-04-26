@@ -1,6 +1,16 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let splitword=word.split("")
+  let reversedsplit=splitword.reverse()
+  let reversedword=reversedsplit.join("")
+  if (word===reversedword){
+    return true
+  }
+  else {
+    return false
+  }
 }
+
+isPalindrome("racecar")
 
 /* 
   Add your pseudocode here
